@@ -1,0 +1,300 @@
+/*адаптивная верстка*/
+@media (max-width:1275px){
+    .txt-glav{
+        font-size: 52px;
+    }
+
+    .prd-des{
+        font-size: 22px;
+        padding: 15px 23px;
+    }
+
+    .txt-fon{
+        height: 127px;
+    }
+
+    .all{
+        grid-template-columns: repeat(2, 640px);
+    }
+}
+
+@media (max-width:1159px){
+    .prd-des{
+        font-size: 20px;
+        height: 130px;
+    }
+
+    .txt-fon{
+        height: 150px;
+    }
+
+    .txt_two_screen{
+        font-size: 45px;
+    }
+
+    .p_a{
+        grid-template-columns: repeat(2, 230px);
+    }
+
+    .all{
+        grid-template-columns: repeat(2, 580px);
+    }
+
+    .header{
+        min-height: calc(100vh - 150px);
+    }
+}
+
+@media (max-width:1082px){
+    .header{
+        min-height: calc(100vh - 231px);
+    }
+
+   .txt-fon{
+        height: 175px;
+   }
+
+    .foot_r{
+        padding-top: 21px;
+    }
+
+    .all{
+        grid-template-columns: repeat(2, 480px);
+        font-weight: 500;
+    }
+
+    .container{
+        padding: 24px 120px;
+    }
+}
+
+@media (max-width:987px){
+    .header{
+        min-height: calc(100vh - 270px);
+    }
+
+    .txt-header {
+        padding-top: 85px;
+    }
+
+    .product-glav{
+        margin-bottom: 70px;
+    }
+
+    .txt-glav{
+        font-size: 40px;
+        line-height: 64px;
+    }
+
+    .two_screen{
+        height: 317px;
+        margin-top: -70px;
+    }
+
+    .txt_two_screen{
+        font-size: 38px;
+        line-height: 64px;
+        padding-top: 30px;
+    }
+
+    .grids{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .txt-fon{
+        height: 115px;
+        padding: 0 23px;
+        font-size: 16px;
+    }
+    
+    .prd-des{
+        font-size: 27px;
+        margin-top: -70px;
+    }
+
+    .all{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer_left{
+        margin-top: -15px;
+    }
+
+    .footer_right{
+        margin-right: -30px;
+    }
+}
+
+@media (max-width:877px){
+    
+    .product-glav{
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: -40px;
+    }
+
+    .txt_two_screen{
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .txt-glav{
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    .two_screen{
+        height: 251px;
+    }
+    
+    .ss-head-p-two{
+        padding-top: 30px;
+    }
+
+    .footer_right{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:785px){
+    .txt-fon{
+        height: 150px;
+    }
+}
+
+@media (max-width:741px){
+    .txt-fon {
+        height: 170px;
+    }   
+
+    .txt_two_screen{
+        line-height: 40px;
+    }
+
+    .p_a{
+        grid-template-columns: repeat(2, 180px);
+        margin-bottom: 48px;
+    }
+
+    .container{
+        padding: 24px 130px;
+    }
+
+    .container-footer{
+        padding: 0 130px;
+    }
+}
+
+@media (max-width:707px){
+    .txt-fon {
+        height: 200px;
+    }
+
+    .product-glav{
+        font-size: 28px;
+    }
+
+    .container{
+        padding: 24px 115px;
+    }
+
+    .container-footer{
+        padding: 0 115px;
+    }
+}
+
+@media (max-width:667px){
+    .txt_two_screen{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:560px){
+    .container{
+        padding: 24px 100px;
+    }
+
+    .container-footer{
+        padding: 0 100px;
+    }
+}
+
+@media (max-width:540px){
+    .container{
+        padding: 24px 65px;
+    }
+
+    .container-footer{
+        padding: 0 65px;
+    }
+}
+
+@media (max-width:475px){
+    .container{
+        padding: 24px 50px;
+    }
+
+    .container-footer{
+        padding: 0 50px;
+    }
+
+    .product-glav{
+        margin-top: -71px;
+    }
+
+    .two_screen{
+        width: 93%;
+    }
+}
+
+@media (max-width:440px){
+    .container{
+        padding: 4px 30px;
+    }
+
+    .container-footer{
+        padding: 0 30px;
+    }
+
+    .txt-glav{
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .header{
+        min-height: calc(100vh - 336px);
+        width: 100%;
+    }
+
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (max-width:395px){
+    .header{
+        width: 395px;
+    }
+
+    .three_screen{
+        width: 395px;
+    }
+
+    .container{
+        padding: 4px 20px;
+    }
+
+    .container-footer{
+        padding: 0 20px;
+    }
+
+    .product-glav{
+        font-size: 25px;
+        line-height: 30px;
+        align-items: center;
+    }
+}

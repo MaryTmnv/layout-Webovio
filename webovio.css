@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	/*outline: none;*/
+}
+
+a:focus,
+a:active {
+	/* outline: none;*/
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+a:hover  {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/*начало стилизации (выше - сброс настроек браузера)*/
+body {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 24px 165px;
+    margin: 0 auto;
+    /*max-width: 1230px;*/
+}
+
+.nav{
+    display: grid;
+    position: relative;
+}
+
+.menu{
+    justify-self: end;
+    position: absolute;
+}
+
+.header{
+    min-height: calc(100vh - 81px);
+    background-image: url(../webovio/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.txt-header{
+    padding-top: 121px;
+}
+
+.txt-p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 22px;
+    max-width: 581px;
+}
+
+.txt-glav{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 74px;
+    max-width: 616px;
+    margin-bottom: 24px;
+}
+
+.ss-head-p{
+    color: #FFD723;
+    text-decoration: underline;
+    padding-top: 23px;
+}
+
+.ss-head{
+    color: #FFD723;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.texts-product{
+    padding-top: 126px;
+}
+
+/*второй экран*/
+.texts-product{
+    max-width: 607px;
+    padding-bottom: 60px;
+}
+
+.product-glav{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    justify-content: space-between;;
+}
+
+.prd-des{
+    padding: 22px 30px;
+    color: #4D533C;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.txt-fon{
+    padding: 0 30px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(33, 56, 66, 0.6);
+    height: 104px;
+}
+
+.ss-head-p span{
+    padding: 0 30px;
+}
+
+.texts-product-grid{
+    max-width: 255px;
+    max-height: 309px;
+    justify-content: space-between;
+    margin-bottom: 154px;
+}
+
+.ss-head{
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.ss-head-p{
+    height: 24px;
+    display: grid;
+    align-items: end;
+    margin-top: auto;
+    margin-bottom: 36px;
+}
+
+/*третий экран на 80%*/
+.two_screen{
+    background-color: #f3f1f1;
+    width: 87%;
+    height: 362px;
+    position: relative;
+    z-index: 99;
+}
+
+.txt_two_screen{
+    padding-top: 46px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+    max-width: 822px;
+    color: #4D533C;
+}
+
+.ss-head-p-two{
+    color: hsl(120, 3%, 81%);
+    text-decoration: underline;
+    padding-top: 50px;
+}
+
+.ss-head-two{
+    color: hsl(120, 3%, 81%);
+}
+
+/*three screen*/
+.three_screen{
+    background-image: url(../webovio/images/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    /*width: auto;
+    height: 920px;*/
+    z-index: 98;
+    margin-top: -190px;
+    padding-top: 254px;
+}
+
+.container-footer{
+    padding: 0 165px;
+    margin: 0 auto;
+}
+
+.p_a{
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    margin-bottom: 52px;
+}
+
+.txt-phone{
+    margin-bottom: 8px;
+    color: #B6C197;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.phone{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.txt-address{
+    margin-bottom: 8px;
+    color: #B6C197;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.address{
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.all{
+    display: grid;
+    grid-template-columns: repeat(2, 780px);
+    padding-bottom: 60px;
+}
+
+.footer_right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.foot_r{
+    padding-top: 60px;
+    color: white;
+    font-weight: 600;
+    line-height: 38px;
+    font-size: 16px;
+    margin-bottom: 21px;
+}
+
+.s_sd{
+    font-size: 16px;
+    color: #B6C197;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.email{
+    font-weight: 700;
+    color: white;
+    line-height: 38px;
+    font-size: 24px;
+    width: 319px;
+}
